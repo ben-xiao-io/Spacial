@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(68, 120, 196);
+}
+
+nav a {
+    display: block;
+    font-size: 1.25rem;
+    float: right;
+    text-decoration: none;
+    color: white;
+    line-height: 3rem;
+}
+
+#result {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.banner {
+    text-align: center;
+    background-image: url("https://nacto.org/wp-content/uploads/2013/07/USDG-Chapter_INTERSECTIONS_1060x360_Atlanta-Josh-Mello.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 10rem;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    height: calc(100vh - 13rem);
+}
+
+.alert {
+    border-radius: 2px;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+.alert img {
+    max-width: calc(100% - 1rem);
+    max-height: 25rem;
+    margin: 0.5rem;
+}
+
+.line {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+}
+
+.button {
+    border: 0;
+    padding: 0.5rem;
+    background-color: lightgray;
+    color: black;
+}
+
+.button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+@media screen and (min-width: 1212px) {
+    #result {display: flex}
+    .alert {max-width: calc(50vw - 3.5rem)}
+}
