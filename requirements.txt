@@ -28,7 +28,7 @@ numpy==1.14.4
 oauthlib==3.1.0
 opencv-python==4.1.0.25
 opt-einsum==3.2.0
-Pillow==7.0.0
+Pillow==9.0.1
 post==2019.4.13
 protobuf==3.11.3
 public==2019.4.13
